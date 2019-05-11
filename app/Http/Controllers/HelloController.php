@@ -199,20 +199,49 @@ class HelloController extends Controller
     
 
     
-    public function index() {
-        $data = [
-            'msg'=>'入力してください。',
-            ];
-        return view('hello.index', $data);
-    }
+// public function index() {
+//      $data = [
+//          'msg'=>'入力してください。',
+//          ];
+//     return view('hello.index', $data);
+//  }
     
-    public function post(Request $request) {
-        $msg = $request->msg;
-        $data = [
-            'msg'=>'こんにちは' . $msg . 'さん！',
-            ];
-        return view('hello.index', $data);
-    }
+//  public function post(Request $request) {
+//      $msg = $request->msg;
+//      $data = [
+//          'msg'=>'こんにちは' . $msg . 'さん！',
+//          ];
+//      return view('hello.index', $data);
+//  }
     
+    // public function index() {
+    //     return view('hello.index', ['msg'=>'']);
+    // }
+    
+    // public function post(Request $request) {
+    //     return view('hello.index', ['msg'=>$request->msg]);
+    // }
+    
+    // public function index() {
+    //     return view('hello.index');
+    // }
+    
+    // public function post(Request $request) {
+    //     return view('hello.index', ['msg'=>$request->msg]);
+    // }
+    
+    // public function index() {
+    //     return view('hello.index');
+    // }
+    
+    // public function post(Request $request) {
+    //     return view('hello.index', ['meg'=>$request->msg]);
+    // }
+    
+    // public function index() {
+    //     $data = ['one', 'two', 'three', 'four', 'five'];
+    //     return view('hello.index', ['data'=>$data]);
+    // }
+
 }
 

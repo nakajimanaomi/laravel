@@ -74,8 +74,18 @@ Route::get('/', function () {
 
 // Route::get('hello', function() {
 //     return view('hello.index');
+//  });
+
+
+
+// Route::get('lesson', 'LessonController@index');
+// Route::post('lesson', 'LessonController@post');
+
+// Route::get('lesson', function() {
+//     return view('lesson.index');
 // });
 
-Route::get('hello', 'HelloController@index');
-Route::post('hello', 'HelloController@post');
-Route::post('hello', 'HelloController@id');
+Route::get('lesson', 'LessonController@index');
+Route::post('lesson', 'LessonController@post');
+
+
